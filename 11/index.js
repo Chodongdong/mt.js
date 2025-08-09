@@ -9,6 +9,8 @@ const people = [
 
 function getAdults(peopleArray) {
   // 이곳에 코드를 작성합니다.
+  let adults = peopleArray.filter(people => people.age >= 20);
+  return adults;
 }
 
 console.log(getAdults(people));

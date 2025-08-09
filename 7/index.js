@@ -7,6 +7,11 @@ const cart = [
 
 function getTotalPrice(cartArray) {
   // 이곳에 코드를 작성합니다.
+  let sum = 0;
+  for(let object of cartArray) {
+    sum += object.price;
+  }
+  return sum;
 }
 
 console.log(getTotalPrice(cart)); // 150000이 출력되어야 함
