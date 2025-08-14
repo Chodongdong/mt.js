@@ -2,6 +2,8 @@
 
 function removeDuplicatesAndSort(arr) {
   // 이곳에 코드를 작성합니다.
+  let newArr = arr.filter((key, value) => arr.indexOf(key) === value);
+  return newArr.sort((a, b) => a - b);
 }
 
 console.log(removeDuplicatesAndSort([3, 1, 4, 1, 5, 9, 2, 6, 5]));
